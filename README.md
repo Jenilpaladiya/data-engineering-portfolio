@@ -14,12 +14,13 @@ A reproducible **batch-processing** data architecture using **Docker Compose + P
 
 ```mermaid
 flowchart LR
-  A[CSV Dataset (raw)] -->|Docker volume mount| B[Ingestion Service (Python)]
-  B -->|INSERT| C[(Postgres: retail_raw)]
-  C --> D[Processing Service (Python SQL)]
-  D --> E[(Postgres: daily_metrics)]
-  D --> F[(Postgres: top_products_daily)]
-  D --> G[(Postgres: customer_features_quarterly)]
+  A["CSV dataset (raw)"] -->|"Docker volume mount"| B["Ingestion service (Python)"]
+  B -->|"INSERT"| C["PostgreSQL table: retail_raw"]
+  C --> D["Processing service (Python SQL)"]
+  D --> E["daily_metrics"]
+  D --> F["top_products_daily"]
+  D --> G["customer_features_quarterly"]
+
 ```
 
 ---
