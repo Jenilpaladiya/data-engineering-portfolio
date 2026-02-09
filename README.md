@@ -20,7 +20,6 @@ flowchart LR
   D --> E["daily_metrics"]
   D --> F["top_products_daily"]
   D --> G["customer_features_quarterly"]
-
 ```
 
 ---
