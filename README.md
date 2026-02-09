@@ -1,4 +1,7 @@
+
 # Data Engineering Portfolio (DLMDSEDE02) — Batch Processing Pipeline
+<img width="1452" height="801" alt="dashboard 2" src="https://github.com/user-attachments/assets/02b59c44-6c08-4056-889c-93eaac23f8bd" />
+<img width="1449" height="799" alt="dashboard 1" src="https://github.com/user-attachments/assets/b53aaa77-413e-430f-9df0-f65657dfa123" />
 
 A reproducible **batch-processing** data architecture using **Docker Compose + PostgreSQL + Python microservices**:
 - **postgres** service: data storage (warehouse)
@@ -7,6 +10,11 @@ A reproducible **batch-processing** data architecture using **Docker Compose + P
   - `daily_metrics`
   - `top_products_daily`
   - `customer_features_quarterly`
+- **serving** service: provides a simple **dashboard** and **API** via FastAPI:
+  - `/dashboard` (HTML)
+  - `/docs` (Swagger UI)
+  - `/metrics/daily` (JSON)
+  - `/metrics/top-products` (JSON)
 
 ---
 
